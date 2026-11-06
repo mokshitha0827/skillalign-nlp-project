@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+# model caches
+.cache/
+huggingface/
+# private / generated material
+reports/*
+!reports/README.md
+!reports/evaluation_results.json
+data/private/
+*.pdf
+!docs/*.pdf
+.DS_Store

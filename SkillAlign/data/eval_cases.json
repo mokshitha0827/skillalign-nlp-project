@@ -1,0 +1,354 @@
+{
+  "description": "Synthetic evaluation set. Resumes/job descriptions were written by the project author; labels were assigned by the same author following the rubric in docs/evaluation.md BEFORE running the system. Single annotator, small sample.",
+  "labels": {
+    "Matched": "skill named in the resume (or implied by a more specific named tool)",
+    "Partial": "related skill/tool named or related activity described without naming the skill",
+    "Missing": "no supporting evidence"
+  },
+  "cases": [
+    {
+      "id": "C01_data_scientist",
+      "note": "Typical data-science resume; ML only implied by tool usage.",
+      "resume": "Skills\nPython, SQL, Pandas, scikit-learn, Matplotlib\nExperience\nBuilt a churn prediction model using sklearn and evaluated it with cross-validation.\nCleaned and merged customer tables with pandas and SQL queries.\nPresented results to the marketing team.",
+      "jd": "Requirements\n- Python\n- SQL\n- Machine learning\n- Data visualization\n- Communication skills\nNice to have\n- Docker",
+      "resume_skills": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "scikit-learn",
+        "Matplotlib",
+        "Model Evaluation",
+        "Presentation Skills"
+      ],
+      "expected": {
+        "Python": "Matched",
+        "SQL": "Matched",
+        "Machine Learning": "Partial",
+        "Data Visualization": "Matched",
+        "Communication": "Partial",
+        "Docker": "Missing"
+      },
+      "jd_skills": [
+        "Communication",
+        "Data Visualization",
+        "Docker",
+        "Machine Learning",
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "id": "C02_backend_dev",
+      "note": "Backend resume; Kubernetes and microservices only indirectly supported.",
+      "resume": "Summary\nBackend developer with 2 years of experience building services.\nExperience\nDeveloped REST APIs in Java using Spring Boot and PostgreSQL.\nContainerized services with Docker and deployed them through Jenkins pipelines.\nWrote unit tests with JUnit and reviewed teammates' pull requests.\nWorked in an Agile team using Jira.",
+      "jd": "Required: Java, Spring Boot, REST APIs, SQL, Docker, Kubernetes, CI/CD\nPreferred: AWS, Microservices",
+      "resume_skills": [
+        "REST APIs",
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Docker",
+        "CI/CD",
+        "Unit Testing",
+        "Code Review",
+        "Agile",
+        "Jira"
+      ],
+      "expected": {
+        "Java": "Matched",
+        "Spring Boot": "Matched",
+        "REST APIs": "Matched",
+        "SQL": "Matched",
+        "Docker": "Matched",
+        "Kubernetes": "Partial",
+        "CI/CD": "Matched",
+        "AWS": "Missing",
+        "Microservices": "Partial"
+      },
+      "jd_skills": [
+        "AWS",
+        "CI/CD",
+        "Docker",
+        "Java",
+        "Kubernetes",
+        "Microservices",
+        "REST APIs",
+        "SQL",
+        "Spring Boot"
+      ]
+    },
+    {
+      "id": "C03_frontend",
+      "note": "Frontend resume; tests Java-vs-JavaScript style confusion and related-skill partials.",
+      "resume": "Technical Skills: HTML, CSS, JavaScript, React, Git\nProjects\nBuilt a portfolio website with React and Tailwind CSS.\nCreated a weather dashboard that calls a public API.\nFamiliar with Java from coursework.",
+      "jd": "We need a frontend developer.\nRequirements\n- Strong JavaScript and TypeScript\n- React or Vue.js\n- HTML and CSS\n- Git\n- Experience with Node.js\nNice to have\n- GraphQL",
+      "resume_skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Git",
+        "Java",
+        "Data Visualization"
+      ],
+      "expected": {
+        "JavaScript": "Matched",
+        "TypeScript": "Partial",
+        "React": "Matched",
+        "Vue.js": "Partial",
+        "HTML": "Matched",
+        "CSS": "Matched",
+        "Git": "Matched",
+        "Node.js": "Partial",
+        "GraphQL": "Missing"
+      },
+      "jd_skills": [
+        "CSS",
+        "Git",
+        "GraphQL",
+        "HTML",
+        "JavaScript",
+        "Node.js",
+        "React",
+        "TypeScript",
+        "Vue.js"
+      ]
+    },
+    {
+      "id": "C04_nlp_engineer",
+      "note": "NLP resume with aliases (BERT, cosine similarity); LLM/RAG only related.",
+      "resume": "Profile\nMaster's student focused on natural language processing.\nProjects\nFine-tuned BERT with the Hugging Face Transformers library for sentiment analysis.\nBuilt a named entity recognition pipeline with spaCy.\nUsed TF-IDF and cosine similarity to rank documents.\nSkills: Python, PyTorch, Git",
+      "jd": "Requirements: Python, NLP, Transformer models, PyTorch, Docker\nPreferred: LLMs, Retrieval-augmented generation, Kubernetes",
+      "resume_skills": [
+        "NLP",
+        "Transformer Models",
+        "Hugging Face",
+        "Sentiment Analysis",
+        "Named Entity Recognition",
+        "spaCy",
+        "TF-IDF",
+        "Semantic Search",
+        "Python",
+        "PyTorch",
+        "Git"
+      ],
+      "expected": {
+        "Python": "Matched",
+        "NLP": "Matched",
+        "Transformer Models": "Matched",
+        "PyTorch": "Matched",
+        "Docker": "Missing",
+        "LLMs": "Partial",
+        "RAG": "Partial",
+        "Kubernetes": "Missing"
+      },
+      "jd_skills": [
+        "Docker",
+        "Kubernetes",
+        "LLMs",
+        "NLP",
+        "PyTorch",
+        "Python",
+        "RAG",
+        "Transformer Models"
+      ]
+    },
+    {
+      "id": "C05_data_analyst",
+      "note": "Analyst resume; JD uses the single-letter language name 'R' (a documented limitation).",
+      "resume": "Skills\nExcel, SQL Server, Power BI, Tableau\nExperience\nCreated monthly sales dashboards in Power BI for regional managers.\nWrote T-SQL queries against Microsoft SQL Server to extract revenue data.\nAutomated weekly reports with VBA macros in Excel.\nCommunicated insights to stakeholders.",
+      "jd": "Qualifications\n- SQL\n- Power BI or Tableau\n- Excel\n- Statistics\n- Python\nNice to have: R, A/B testing",
+      "resume_skills": [
+        "Excel",
+        "SQL Server",
+        "SQL",
+        "Power BI",
+        "Tableau",
+        "Data Visualization",
+        "Stakeholder Management"
+      ],
+      "expected": {
+        "SQL": "Matched",
+        "Power BI": "Matched",
+        "Tableau": "Matched",
+        "Excel": "Matched",
+        "Statistics": "Missing",
+        "Python": "Missing",
+        "R": "Missing",
+        "A/B Testing": "Missing"
+      },
+      "jd_skills": [
+        "A/B Testing",
+        "Excel",
+        "Power BI",
+        "Python",
+        "R",
+        "SQL",
+        "Statistics",
+        "Tableau"
+      ]
+    },
+    {
+      "id": "C06_ambiguity_traps",
+      "note": "Ambiguous words: excel (verb), sparked, go-to-market, C vs C++, Java vs JavaScript, SQL vs NoSQL.",
+      "resume": "Experience\nI excel at explaining complex ideas to non-technical audiences.\nBuilt a mobile web app with JavaScript and MongoDB.\nLed a go-to-market campaign that sparked 30% growth.\nStudied C programming in my first-year course and C++ later.",
+      "jd": "Requirements\n- Java\n- SQL\n- Apache Spark\n- C++\n- C programming\n- NoSQL",
+      "resume_skills": [
+        "JavaScript",
+        "MongoDB",
+        "C",
+        "C++"
+      ],
+      "expected": {
+        "Java": "Missing",
+        "SQL": "Missing",
+        "Apache Spark": "Missing",
+        "C++": "Matched",
+        "C": "Matched",
+        "NoSQL": "Matched"
+      },
+      "jd_skills": [
+        "Apache Spark",
+        "C",
+        "C++",
+        "Java",
+        "NoSQL",
+        "SQL"
+      ]
+    },
+    {
+      "id": "C07_devops",
+      "note": "DevOps resume; Azure supported only through AWS experience.",
+      "resume": "Skills: Linux, Bash, Docker, Kubernetes, Terraform, AWS, GitHub Actions, Python\nExperience\nMaintained CI pipelines and automated deployments with GitHub Actions.\nProvisioned AWS infrastructure using Terraform.\nMonitored production services and handled on-call incidents.",
+      "jd": "Responsibilities\nOperate Kubernetes clusters on cloud platforms.\nRequirements\n- Linux administration\n- Docker\n- Terraform\n- CI/CD\n- Python scripting\n- Azure\nPreferred\n- Ansible",
+      "resume_skills": [
+        "Linux",
+        "Bash/Shell Scripting",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "AWS",
+        "CI/CD",
+        "Python"
+      ],
+      "expected": {
+        "Kubernetes": "Matched",
+        "Cloud Computing": "Matched",
+        "Linux": "Matched",
+        "Docker": "Matched",
+        "Terraform": "Matched",
+        "CI/CD": "Matched",
+        "Python": "Matched",
+        "Azure": "Partial"
+      },
+      "jd_skills": [
+        "Azure",
+        "CI/CD",
+        "Cloud Computing",
+        "Docker",
+        "Kubernetes",
+        "Linux",
+        "Python",
+        "Terraform"
+      ]
+    },
+    {
+      "id": "C08_career_changer",
+      "note": "Non-technical resume; mostly soft skills; most technical requirements are genuinely missing.",
+      "resume": "Summary\nRecent graduate with a degree in business administration.\nExperience\nCoordinated a team of five volunteers for a charity event.\nWrote weekly reports for the club committee.\nSkills\nMicrosoft Excel, teamwork, time management",
+      "jd": "Requirements\n- Excel\n- Teamwork\n- Leadership\n- Python\n- Communication\n- SQL\n- Project management",
+      "resume_skills": [
+        "Excel",
+        "Teamwork",
+        "Time Management"
+      ],
+      "expected": {
+        "Excel": "Matched",
+        "Teamwork": "Matched",
+        "Leadership": "Partial",
+        "Python": "Missing",
+        "Communication": "Partial",
+        "SQL": "Missing",
+        "Project Management": "Partial"
+      },
+      "jd_skills": [
+        "Communication",
+        "Excel",
+        "Leadership",
+        "Project Management",
+        "Python",
+        "SQL",
+        "Teamwork"
+      ]
+    },
+    {
+      "id": "C09_alias_duplicates",
+      "note": "Many aliases and repeated mentions of the same skill.",
+      "resume": "Skills: ML, Natural Language Processing, sklearn, scikit-learn, Postgres, NodeJS, K8s\nExperience\nUsed machine learning and machine-learning pipelines. Built NLP models with NLP libraries.",
+      "jd": "Requirements\nMachine Learning, NLP, scikit-learn, PostgreSQL, Node.js, Kubernetes, Docker",
+      "resume_skills": [
+        "Machine Learning",
+        "NLP",
+        "scikit-learn",
+        "PostgreSQL",
+        "Node.js",
+        "Kubernetes"
+      ],
+      "expected": {
+        "Machine Learning": "Matched",
+        "NLP": "Matched",
+        "scikit-learn": "Matched",
+        "PostgreSQL": "Matched",
+        "Node.js": "Matched",
+        "Kubernetes": "Matched",
+        "Docker": "Partial"
+      },
+      "jd_skills": [
+        "Docker",
+        "Kubernetes",
+        "Machine Learning",
+        "NLP",
+        "Node.js",
+        "PostgreSQL",
+        "scikit-learn"
+      ]
+    },
+    {
+      "id": "C10_web_python",
+      "note": "Python web resume; Python only implied through Flask; mixed required/preferred.",
+      "resume": "Experience\nBuilt an internal Flask app with SQLite for tracking inventory.\nPracticed test-driven development and wrote pytest suites.\nCollaborated with designers and product managers in two-week Scrum sprints.\nMentored two interns on Git workflow.",
+      "jd": "Requirements\n- Python\n- Flask or Django\n- Unit testing\n- Agile methodologies\n- SQL\n- Communication\nPreferred\n- Mentoring, Docker",
+      "resume_skills": [
+        "Flask",
+        "SQLite",
+        "Unit Testing",
+        "Teamwork",
+        "Agile",
+        "Mentoring",
+        "Git"
+      ],
+      "expected": {
+        "Python": "Matched",
+        "Flask": "Matched",
+        "Django": "Partial",
+        "Unit Testing": "Matched",
+        "Agile": "Matched",
+        "SQL": "Matched",
+        "Communication": "Partial",
+        "Mentoring": "Matched",
+        "Docker": "Missing"
+      },
+      "jd_skills": [
+        "Agile",
+        "Communication",
+        "Django",
+        "Docker",
+        "Flask",
+        "Mentoring",
+        "Python",
+        "SQL",
+        "Unit Testing"
+      ]
+    }
+  ]
+}

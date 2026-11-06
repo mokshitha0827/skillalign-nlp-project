@@ -1,0 +1,23 @@
+Junior NLP Engineer
+
+About the role
+We are looking for a Junior NLP Engineer to help build text-understanding features for our learning platform. You will work with data scientists and engineers to turn research ideas into reliable features.
+
+Requirements
+- Strong Python programming skills.
+- Hands-on experience with natural language processing, including text classification.
+- Experience with scikit-learn and Pandas for data preparation and modelling.
+- Familiarity with transformer models such as BERT and the Hugging Face ecosystem.
+- Working knowledge of PostgreSQL and SQL.
+- Experience building and consuming REST APIs.
+- Version control with Git and collaborative code review.
+- Excellent communication skills and the ability to work in a team.
+
+Nice to have
+- Experience deploying applications with Docker.
+- Exposure to AWS or another cloud platform.
+- Knowledge of Kubernetes.
+- Experience creating dashboards or data visualization.
+
+About us
+We are a friendly, fast-growing company that values curiosity and learning. We use Terraform and Kubernetes internally.

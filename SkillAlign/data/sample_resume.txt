@@ -1,0 +1,27 @@
+Jordan Lee
+Final-year B.Tech student, Computer Science and Engineering
+
+SUMMARY
+Computer science student interested in natural language processing and data-driven applications. Comfortable working in small teams and presenting technical results.
+
+SKILLS
+Python, Pandas, NumPy, scikit-learn, spaCy, MySQL, Git, GitHub, Matplotlib, Streamlit
+
+PROJECTS
+Resume Classifier
+- Built a text classification model using TF-IDF features and scikit-learn to sort resumes into job families.
+- Evaluated the model with cross-validation and reported precision, recall and F1-score.
+Campus Feedback Dashboard
+- Created an interactive Streamlit dashboard that summarises student survey data with Matplotlib charts.
+- Stored survey responses in a MySQL database and wrote SQL queries for weekly summaries.
+Semantic FAQ Search
+- Used sentence-transformers embeddings and cosine similarity to match student questions to FAQ answers.
+
+EXPERIENCE
+Data Analyst Intern, Brightpath Solutions (Jun - Aug 2025)
+- Cleaned and merged sales spreadsheets with pandas, reducing manual reporting time.
+- Collaborated with a team of four interns and presented weekly findings to the project manager.
+- Used Git and GitHub pull requests for code review with teammates.
+
+EDUCATION
+B.Tech in Computer Science and Engineering, expected 2026
